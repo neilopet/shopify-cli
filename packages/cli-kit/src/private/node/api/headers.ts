@@ -44,6 +44,7 @@ export function sanitizedHeadersOutput(headers: {[key: string]: string}): string
     .join('\n')
 }
 
+// @TODO: Investigate headers for Fluent API SDK
 export function buildHeaders(token?: string): {[key: string]: string} {
   const userAgent = `Shopify CLI; v=${CLI_KIT_VERSION}`
 

@@ -41,6 +41,7 @@ function cliKitStore() {
   if (!_instance) {
     _instance = new LocalStorage<ConfSchema>({projectName: `shopify-cli-kit${isUnitTest() ? '-test' : ''}`})
   }
+  // @TODO: Investigate Auth using creds in LocalStorage
   return _instance
 }
 
